@@ -10,5 +10,5 @@ function generateImage() {
 console.log(target, func, strength, direction);
 
     var output = document.getElementById("output");
-    output.innerHTML = `<img src=${target}_${func}_${strength}_${direction}.png>`;
+    output.innerHTML = `<img src=img/${target}_${func}_${strength}_${direction}.png>`;
 }
