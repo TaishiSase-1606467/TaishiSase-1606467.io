@@ -10,12 +10,5 @@ function generateImage() {
 console.log(target, func, strength, direction);
 
     var output = document.getElementById("output");
-
-    if (target === "自動車" && func === "出会い頭機能" && strength === "警報" && direction === "右"){
-            output.innerHTML = "<img src='出会い頭_右_警報.png'>";
-    } else if (target === "自動車" && func === "出会い頭機能" && strength === "注意喚起" && direction === "右") {
-            output.innerHTML = "<img src='出会い頭_右_注意喚起.png'>";
-    }　else if (target === "自動車" && func === "出会い頭機能" && strength === "情報提供" && direction === "右") {
-            output.innerHTML = "<img src='出会い頭_右_情報提供.png'>";
-    }
-  }
+    output.innerHTML = `<img src=${target}_${func}_${strength}_${direction}.png>`;
+}
